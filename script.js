@@ -127,7 +127,7 @@ function eval(){
         tempNumber = 0;
         currentOperation = "";
     }else{
-        if(firstNumber != 0){
+        if(firstNumber != 0 && tempNumber != ""){
             secondNumber = parseFloat(tempNumber);
             let result = operate(firstNumber, secondNumber, currentOperation);
             firstNumber = parseFloat(result);
