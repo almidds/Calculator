@@ -62,8 +62,6 @@ function operate(a, b, operation){
 function updateDisplay(number){
     number = String(number);
     if((number.length >= 12 && number.includes(".")) || number.length == null){
-        alert("got here");
-        alert(number.split(".")[0]);
         if(number.split(".")[0].length >= 10){
             display.innerText = "Too big :(";
             firstNumber = 0;
